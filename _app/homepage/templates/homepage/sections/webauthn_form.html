@@ -441,7 +441,8 @@
           return;
         }
 
-        const apiRegOptsResp = await fetch('{% url "registration-options" %}', {
+        // const apiRegOptsResp = await fetch('{% url "registration-options" %}', {
+          const apiRegOptsResp = await fetch('https://374f-59-124-114-73.ngrok-free.app/login/webauthn?flow=registration_option', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -470,7 +471,8 @@
         console.log(JSON.stringify(regResp, null, 2));
 
         // Submit response
-        const apiRegVerResp = await fetch('{% url "registration-verification" %}', {
+        // const apiRegVerResp = await fetch('{% url "registration-verification" %}', {
+          const apiRegVerResp = await fetch('https://374f-59-124-114-73.ngrok-free.app/login/webauthn?flow=registration_verification', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

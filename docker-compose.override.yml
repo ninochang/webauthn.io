@@ -21,6 +21,6 @@ services:
     command: gunicorn webauthnio.wsgi -c gunicorn.cfg.py --reload
     environment:
       - DEBUG=true
-      - RP_ID=swag.live
+      - RP_ID=localhost
       - RP_NAME=WebAuthn.io (Dev)
-      - RP_EXPECTED_ORIGIN=https://localhost.swag.live
+      - RP_EXPECTED_ORIGIN=https://localhost
