@@ -442,7 +442,7 @@
         }
 
         // const apiRegOptsResp = await fetch('{% url "registration-options" %}', {
-          const apiRegOptsResp = await fetch('https://374f-59-124-114-73.ngrok-free.app/login/webauthn?flow=registration_option', {
+          const apiRegOptsResp = await fetch('https://374f-59-124-114-73.ngrok-free.app/login/webauthn?flow=registration_options', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -495,7 +495,8 @@
         } = this.options;
 
         // Submit options
-        const apiAuthOptsResp = await fetch('{% url "authentication-options" %}', {
+        // const apiAuthOptsResp = await fetch('{% url "authentication-options" %}', {
+        const apiAuthOptsResp = await fetch('https://374f-59-124-114-73.ngrok-free.app/login/webauthn?flow=authentication_options', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -520,7 +521,8 @@
         console.log(JSON.stringify(authResp, null, 2));
 
         // Submit response
-        const apiAuthVerResp = await fetch('{% url "authentication-verification" %}', {
+        // const apiAuthVerResp = await fetch('{% url "authentication-verification" %}', {
+        const apiAuthVerResp = await fetch('https://374f-59-124-114-73.ngrok-free.app/login/webauthn?flow=authentication_verification', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
