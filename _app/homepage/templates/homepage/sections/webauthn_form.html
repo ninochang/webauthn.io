@@ -442,7 +442,7 @@
         }
 
         // const apiRegOptsResp = await fetch('{% url "registration-options" %}', {
-          const apiRegOptsResp = await fetch('https://374f-59-124-114-73.ngrok-free.app/login/webauthn?flow=registration_options', {
+          const apiRegOptsResp = await fetch('https://9bb3-2001-b011-30d0-1137-f4fe-f69f-87aa-eaf.ngrok-free.app/verify/webauthn', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -472,7 +472,7 @@
 
         // Submit response
         // const apiRegVerResp = await fetch('{% url "registration-verification" %}', {
-          const apiRegVerResp = await fetch('https://374f-59-124-114-73.ngrok-free.app/login/webauthn?flow=registration_verification', {
+          const apiRegVerResp = await fetch('https://9bb3-2001-b011-30d0-1137-f4fe-f69f-87aa-eaf.ngrok-free.app/login/webauthn', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -496,7 +496,7 @@
 
         // Submit options
         // const apiAuthOptsResp = await fetch('{% url "authentication-options" %}', {
-        const apiAuthOptsResp = await fetch('https://374f-59-124-114-73.ngrok-free.app/login/webauthn?flow=authentication_options', {
+        const apiAuthOptsResp = await fetch('https://9bb3-2001-b011-30d0-1137-f4fe-f69f-87aa-eaf.ngrok-free.app/verify/webauthn', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -522,7 +522,7 @@
 
         // Submit response
         // const apiAuthVerResp = await fetch('{% url "authentication-verification" %}', {
-        const apiAuthVerResp = await fetch('https://374f-59-124-114-73.ngrok-free.app/login/webauthn?flow=authentication_verification', {
+        const apiAuthVerResp = await fetch('https://9bb3-2001-b011-30d0-1137-f4fe-f69f-87aa-eaf.ngrok-free.app/login/webauthn', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
