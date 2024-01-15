@@ -13,6 +13,7 @@ webauthn = "*"
 libsass = "*"
 django-compressor = "*"
 django-sass-processor = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 black = "*"
